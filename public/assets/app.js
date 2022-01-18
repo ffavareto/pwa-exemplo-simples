@@ -27,7 +27,11 @@ function atualizaLista() {
 }
 
 function templatetarefa(tarefa, posicaoTarefa) {
-    return `<li ondblclick="removeTarefa(${posicaoTarefa})">- ${tarefa}</li>`;
+    return `
+        <li ondblclick="removeTarefa(${posicaoTarefa})">
+            - ${tarefa}
+        </li>
+    `;
 }
 
 function addTarefa(tarefa) {
